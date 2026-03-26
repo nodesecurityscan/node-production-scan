@@ -1,2 +1,96 @@
-# node-production-scan
-Understand if your Node.js API is really production-ready. Generate a dependency risk report with real production impact insights.
+# 🛡️ Node Production Scan
+
+A lightweight analysis tool focused on identifying **real security risks in Node.js production environments**.
+
+---
+
+## 🎯 Purpose
+
+Most automated tools (like `npm audit`) report **all known vulnerabilities**, without context.
+
+This often leads to:
+
+- inflated results  
+- unnecessary panic  
+- wasted time on non-critical issues  
+
+👉 This project focuses on **what actually matters in production**.
+
+---
+
+## 🧠 Approach
+
+The analysis distinguishes between:
+
+### 🔴 Effective Vulnerabilities
+Issues that are:
+- present in runtime dependencies  
+- reachable in production code paths  
+- realistically exploitable  
+
+### 🟡 Noise (Non-Effective Vulnerabilities)
+Issues that are:
+- in devDependencies  
+- not executed in production  
+- not reachable  
+- theoretical or non-exploitable  
+
+---
+
+## ⚡ Key Idea
+
+> npm audit tells you what is vulnerable  
+> this tool tries to tell you what is actually exploitable
+
+---
+
+## 📦 Input Required
+
+For a first analysis, you don’t need the full project.
+
+Only:
+
+- `package.json`
+- lock file (`package-lock.json` or `yarn.lock`)
+
+---
+
+## 📊 Output
+
+The report includes:
+
+- Raw vulnerabilities (from audit tools)  
+- Effective vulnerabilities (filtered)  
+- Risk score (0–100)  
+- Production risk assessment  
+- Actionable recommendations  
+
+---
+
+## 🧪 Example Reports
+
+- [FeathersJS Scan](./reports/feathers.pdf)
+- [Payment Platform (real-world project)](./reports/payment-platform.pdf)
+
+---
+
+## 🚀 Status
+
+Work in progress — currently validating the approach on real-world projects.
+
+---
+
+## 💬 Feedback
+
+If you have a Node.js project and want a quick analysis:
+
+👉 feel free to reach out or share your `package.json` + lock file
+
+---
+
+## ⚠️ Disclaimer
+
+This is not a replacement for full security audits.  
+The goal is to provide **a quick, realistic view of production risk**.
+
+---
