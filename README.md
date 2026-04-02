@@ -67,10 +67,9 @@ The report includes:
 
 ---
 
-## 🧪 Example Reports
+## 🧪 Sample Report
 
-- [FeathersJS Scan](./reports/feathers.pdf)
-- [Payment Platform (real-world project)](./reports/payment-platform.pdf)
+- [Express scan](./reports/express-healthcheck.pdf)
 
 ---
 
