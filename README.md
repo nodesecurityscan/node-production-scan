@@ -1,20 +1,25 @@
 # 🛡️ Node Production Scan
 
-Stop wasting time on false positives from npm audit.
+Stop treating all npm audit vulnerabilities as real production risks.
+
+Most of them are not exploitable in runtime — this tool shows you which ones actually are.
 
 This tool helps you understand:
 
-- which vulnerabilities are реально exposed in production
+- which vulnerabilities are exposed in production
 - and which ones are just noise (dev dependencies, tooling, non-runtime paths)
 
 ---
 
 ## Example (Express)
-
+npm audit:
 - Critical: 1
 - High: 3
+
+Production reality:
 - Runtime exposure: 0
 
+👉 Same project, completely different risk perception.
 👉 npm audit says "high risk"  
 👉 production reality: no runtime exposure
 
@@ -116,3 +121,14 @@ This is not a replacement for full security audits.
 The goal is to provide **a quick, realistic view of production risk**.
 
 ---
+
+## Try it
+
+If you have a Node.js project, you can share just:
+
+- package.json
+- package-lock.json
+
+No need to send the full codebase.
+
+I'll provide a quick production risk evaluation.
