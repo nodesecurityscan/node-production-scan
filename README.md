@@ -1,7 +1,26 @@
 # 🛡️ Node Production Scan
 
-A lightweight analysis tool focused on identifying **real security risks in Node.js production environments**.
+Stop wasting time on false positives from npm audit.
 
+This tool helps you understand:
+
+- which vulnerabilities are реально exposed in production
+- and which ones are just noise (dev dependencies, tooling, non-runtime paths)
+
+---
+
+## Example (Express)
+
+- Critical: 1
+- High: 3
+- Runtime exposure: 0
+
+👉 npm audit says "high risk"  
+👉 production reality: no runtime exposure
+
+---
+
+This is the gap this tool solves.
 ---
 
 ## 🎯 Purpose
