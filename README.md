@@ -86,9 +86,13 @@ The report includes:
 
 ---
 
-## 🧪 Sample Report
+## Sample report
 
-- [Express scan](./reports/express-healthcheck.pdf)
+👉 [View Express report](./reports/express-healthcheck.pdf)
+
+Real example where:
+- npm audit reports critical/high
+- but runtime exposure = 0
 
 ---
 
