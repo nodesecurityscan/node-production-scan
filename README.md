@@ -2,12 +2,15 @@
 
 Stop treating all npm audit vulnerabilities as real production risks.
 
-Most of them are not exploitable in runtime — this tool shows you which ones actually are.
+Most of them are NOT exploitable in production runtime — this tool shows you which ones actually are.
 
 This tool helps you understand:
 
 - which vulnerabilities are exposed in production
 - and which ones are just noise (dev dependencies, tooling, non-runtime paths)
+
+You're not fixing security issues.
+You're wasting time chasing noise.
 
 ---
 
@@ -132,3 +135,5 @@ If you have a Node.js project, you can share just:
 No need to send the full codebase.
 
 I'll provide a quick production risk evaluation.
+
+Looking for real feedback from developers working on Node.js projects.
