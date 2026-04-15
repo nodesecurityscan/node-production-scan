@@ -2,7 +2,7 @@
 
 Stop treating all npm audit vulnerabilities as real production risks.
 
-Most of them are NOT exploitable in production runtime — this tool shows you which ones actually are.
+Most of them are NOT exploitable in the production runtime — this tool shows you which ones actually are.
 
 This tool helps you understand:
 
